@@ -1,0 +1,18 @@
+version: "3.4"
+services:
+  qbt.public.dappnode.eth:
+    build:
+      context: build
+      args:
+        UPSTREAM_VERSION: 4.4.2
+    ports:
+      - 6881/tcp
+      - 6881/udp
+    volumes:
+      - "qbt_config:/config"
+      - "qbt_downloads:/downloads"
+    restart: unless-stopped
+    image: "qbt.public.dappnode.eth:0.1.0"
+volumes:
+  qbt_config: {}
+  qbt_downloads: {}

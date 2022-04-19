@@ -1,0 +1,40 @@
+{
+  "name": "qbt.public.dappnode.eth",
+  "version": "0.1.0",
+  "upstreamVersion": "4.4.2",
+  "upstreamRepo": "linuxserver/qbittorrent",
+  "shortDescription": "Open Source BitTorrent Client",
+  "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
+  "mainService": "qbt",
+  "type": "service",
+  "architectures": ["linux/amd64"],
+  "exposable": [
+    {
+      "name": "qBittorrent",
+      "description": "qBittorrent WebUI",
+      "serviceName": "qbt",
+      "port": 8080
+    }
+  ],
+  "author": "MysticRyuujin <MysticRyuujin@gmail.com> (https://github.com/MysticRyuujin)",
+  "contributors": [],
+  "categories": ["Developer tools", "Communications"],
+  "keywords": ["qBittorrent", "bittorrent", "qbt"],
+  "globalEnvs": {
+    "all": true
+  },
+  "backup": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MysticRyuujin/dappnode-qbt"
+  },
+  "bugs": {
+    "url": "https://github.com/MysticRyuujin/dappnode-qbt/issues"
+  },
+  "links": {
+    "homepage": "https://www.qbittorrent.org/",
+    "ui": "http://qbt.public.dappnode:8080/",
+    "readme": "https://github.com/MysticRyuujin/dappnode-qbt/blob/main/README.md"
+  },
+  "license": "GLP-3.0"
+}
